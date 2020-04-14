@@ -11,5 +11,13 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography`,
             },
         },
+        {
+            resolve: "gatsby-source-graphql",
+            options: {
+                typeName: "MANADJA",
+                fieldName: "manadja",
+                url: "http://localhost:7000/api/graphql",
+            },
+        },
     ],
 };
